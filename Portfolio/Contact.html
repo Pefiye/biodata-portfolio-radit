@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+body {
+font-family: cursive; 
+background-color: #363036;
+margin: 0;
+}
+.body-contact{
+ background-position: center;
+ background-size: cover ;
+ background-attachment: fixed;
+}
+header {
+background-color: #393646; padding: 10px;
+color: #fff;
+text-align: center;
+}
+nav{
+background-color: #4F4557;
+color: #fff;
+padding: 10px; text-align: center;
+}
+
+nav a{
+    color:#fff;
+    text-decoration: none;
+    margin:10px;
+}
+
+section {
+display: flex;
+flex-wrap: wrap;
+justify-content: center; 
+align-items: center;
+margin: 20px;
+}
+
+footer {
+background-color: #393646;
+color: #fff;
+padding: 10px; text-align:center;
+}
+
+
+.contact{
+    width: 500px;
+    margin-top: 50px ;
+    margin-bottom: 50px;
+    margin-left: 30%;
+    border-radius: 5px;
+    background-color:#393646;
+    padding: 20px;
+
+}
+.title{
+    font-size: 30px;
+    text-align: center;
+    margin:0px;
+}
+
+hr{
+    margin-bottom:20px;
+}
+
+.form-input{
+    width:100%;
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 2px;
+    box-sizing: border-box;
+    background-color: #4F4557;
+    margin-top:6px;
+    margin-bottom: 16px;
+
+}
+
+textarea{
+    height: 100px;
+}
+
+.send{
+    height: 40px;
+    color:white;
+    background-color:#2f2c3a;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+.send:hover{
+    background-color: #262530;
+}
+
+p {
+    text-align: center;
+}
+    </style>
+
+</head>
+<body class="body-contact">
+    <header>
+        <img src="header.png" width="1300" height="100">
+    </header>
+    <nav>
+        <a href="Index.html">Back</a>
+    </nav>
+    <div class="contact">
+        <h2 class="title" style="color: white;">Contact Us</h2>
+        <hr style="color: #333;">
+        <form action="Thanks.html">
+            <label style="color: white;">First Name</label>
+            <input type="text" name = "firstname" class="form-input" placeholder="Your First Name">
+            <label style="color: white;">Last Name</label>
+            <input type="text" name = "lastname" class="form-input" placeholder="Your Last Name">
+            <label style="color: white;">Email</label>
+            <input type="text" name = "email" class="form-input" placeholder="Your Email">
+            <label style="color: white;">Country</label>
+            <input type="text" name = "country" class="form-input" placeholder="Your Country">
+            <textarea name="message" class="form-input" placeholder="Write Your message" autocomplete="off"></textarea>
+            <input type="submit" class="send" value="Send">
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2023 Website Penjualan</p>
+    </footer>
+</body>
+</html>
